@@ -21,16 +21,14 @@ echo "<br>";
 //***********Question 3************ */
 print("question 3");
 echo "<br>";
-$n1=5;
-$n2=8;
-while($n1!=$n2){
-    if($n1>$n2){
-        echo $n1,"<br>";
-    }else{
-        echo $n2,"<br>";
+$arr=[6,9,3,67,12,4];
+$max=$arr[0];
+foreach($arr as $value){
+    if($max<$value){
+        $max=$value;
     }
-    break;
 }
+echo "max number is:". $max."<br>";
 echo "----------------------------------------------------";
 echo "<br>";
 
